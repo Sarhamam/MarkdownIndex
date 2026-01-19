@@ -14,7 +14,7 @@ hero:
       link: /guide/
     - theme: alt
       text: View on GitHub
-      link: https://github.com/noetic-eidos
+      link: https://github.com/sarhamam/noeticeidos
 
 features:
   - icon: 🔷
@@ -30,7 +30,7 @@ features:
     details: Frequency-based memory quantized to Riemann zeta zeros with STM/MID/LTM thermal migration.
     link: /guide/spectral-memory
   - icon: 🎭
-    title: 7 Personas
+    title: Personas Resonance
     details: Polylipse cognitive routing with Muse, Spark, Hearth, Atlas, Forge, Sage, and Sentinel modes.
     link: /guide/personas
   - icon: 📐
@@ -41,4 +41,8 @@ features:
     title: Open Research
     details: Breaking down mathematical gatekeeping. Advanced concepts made accessible through practical implementation.
     link: /research/
+  - icon: 🧠
+    title: Context & Agents
+    details: AI agents and skills for mathematical exploration. Applied, theoretical, and resonance ontology perspectives.
+    link: /context/
 ---

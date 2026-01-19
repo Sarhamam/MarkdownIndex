@@ -18,11 +18,12 @@ export default defineConfig({
     nav: [
       { text: 'Guide', link: '/guide/' },
       { text: 'API', link: '/api/' },
+      { text: 'Agents Context', link: '/context/' },
       { text: 'Research', link: '/research/' },
       { 
         text: 'Links',
         items: [
-          { text: 'GitHub', link: 'https://github.com/noetic-eidos' },
+          { text: 'GitHub', link: 'https://github.com/sarhamam/noeticeidos' },
           { text: 'Main Site', link: 'https://noeticeidos.com' }
         ]
       }
@@ -76,11 +77,63 @@ export default defineConfig({
             { text: 'Zeta Function Theory', link: '/research/zeta-theory' }
           ]
         }
+      ],
+      '/context/': [
+        {
+          text: 'Agents Context',
+          items: [
+            { text: 'Overview', link: '/context/' },
+            { text: 'Usage Cookbook', link: '/context/usage_cookbook' }
+          ]
+        },
+        {
+          text: 'Agents',
+          items: [
+            { text: 'Applied Mathematician', link: '/context/agents/applied-mathematician' },
+            { text: 'Theoretical Mathematician', link: '/context/agents/theoretical-mathematician' },
+            { text: 'Resonance Ontologist', link: '/context/agents/resonance-ontologist' }
+          ]
+        },
+        {
+          text: 'Skills',
+          items: [
+            { text: 'Noetic Mathematician', link: '/context/skills/noetic-mathematician/SKILL' },
+            { text: 'Applied', link: '/context/skills/noetic-mathematician/applied' },
+            { text: 'Theoretical', link: '/context/skills/noetic-mathematician/theoretical' },
+            { text: 'Explorer', link: '/context/skills/noetic-mathematician/explorer' },
+            { text: 'Resonance', link: '/context/skills/noetic-mathematician/resonance' }
+          ]
+        },
+        {
+          text: 'Mathematician',
+          collapsed: true,
+          items: [
+            { text: 'Algebra', link: '/context/mathematician/algebra' },
+            { text: 'Geometry', link: '/context/mathematician/geometry' },
+            { text: 'Topology', link: '/context/mathematician/topology' },
+            { text: 'Dynamics', link: '/context/mathematician/dynamics' },
+            { text: 'Graphs', link: '/context/mathematician/graphs' },
+            { text: 'Statistics', link: '/context/mathematician/stats' },
+            { text: 'Solvers', link: '/context/mathematician/solvers' }
+          ]
+        },
+        {
+          text: 'Resonance Ontologist',
+          collapsed: true,
+          items: [
+            { text: 'Index', link: '/context/resonance_ontologist/INDEX' },
+            { text: 'Quickstart', link: '/context/resonance_ontologist/QUICKSTART' },
+            { text: 'Orbital Resonances', link: '/context/resonance_ontologist/01_orbital_resonances' },
+            { text: 'Spectral Signatures', link: '/context/resonance_ontologist/02_spectral_signatures' },
+            { text: 'Mathematics', link: '/context/resonance_ontologist/03-07_mathematics_consolidated' },
+            { text: 'Notation Reference', link: '/context/resonance_ontologist/09_notation_reference' }
+          ]
+        }
       ]
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/noetic-eidos' }
+      { icon: 'github', link: 'https://github.com/sarhamam/noeticeidos' }
     ],
 
     footer: {
@@ -103,5 +156,12 @@ export default defineConfig({
       light: 'github-light',
       dark: 'github-dark'
     }
-  }
+  },
+
+  ignoreDeadLinks: [
+    // Context files have consolidated sections with legacy internal links
+    /^\/context\//,
+    // Relative links within context reference materials
+    /^\.\//
+  ]
 })

@@ -51,12 +51,6 @@ router = PersonaRouter()
 persona, score = router.route(query, current="atlas")
 ```
 
-## Installation
-
-```bash
-pip install noetic-eidos
-```
-
 ## Type Hints
 
 All APIs are fully typed. Import types from:

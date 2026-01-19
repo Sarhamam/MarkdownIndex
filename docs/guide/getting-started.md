@@ -8,20 +8,6 @@ This guide will help you install Noetic Eidos and run your first example.
 - NumPy, SciPy
 - PyTorch (optional, for GPU acceleration)
 
-## Installation
-
-::: code-group
-
-```bash [pip]
-pip install noetic-eidos
-```
-
-```bash [from source]
-git clone https://github.com/noetic-eidos/noetic-eidos
-cd noetic-eidos
-pip install -e .
-```
-
 :::
 
 ## Quick Start
